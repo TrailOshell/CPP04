@@ -6,20 +6,17 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:58:20 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/28 18:02:11 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 18:06:44 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Brain.hpp"
 
-Animal::Animal()
+Brain::Brain()
 {
+
 }
 
-Animal::Animal()
-{
-}
-
-Animal::~Animal()
+Brain::~Brain()
 {
 }

@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:41 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/28 14:07:52 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 18:04:16 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@
 # define DOG_HPP
 
 # include "Animal.hpp"
+# include "Brain.hpp"
 # include <iostream>
 
 class Dog: public Animal
 {
+	private:
+		Brain* _brain;
 	public:
 		Dog();
 		~Dog();
