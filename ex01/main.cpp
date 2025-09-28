@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/07/17 14:16:00 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 17:59:03 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,10 @@
 
 int main()
 {
-	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
+	delete j;//should not create a leak
+	delete i;
 
 	//...
 
