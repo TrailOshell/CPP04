@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:37 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/07/17 14:00:41 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 14:23:36 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class WrongCat: public Animal
 	public:
 		WrongCat();
 		~WrongCat();
-		void makeSound(void);
+		void makeSound(void)const;
 };
 
 #endif

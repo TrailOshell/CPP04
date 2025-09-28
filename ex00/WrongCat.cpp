@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:38 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/07/17 14:15:11 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 14:23:39 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ WrongCat::~WrongCat()
 {
 }
 
-void WrongCat::makeSound()
+void WrongCat::makeSound()const
 {
 	std::cout << PUR "4203" << std::endl;
 }
