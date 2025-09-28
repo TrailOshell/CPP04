@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:39 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/07/17 14:13:42 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 14:04:52 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ class WrongAnimal
 		std::string _type;
 	public:
 		WrongAnimal();
-		WrongAnimal(std::string type);
+		WrongAnimal(const WrongAnimal &type);
+		~WrongAnimal();
 		void makeSound(void);
 		std::string getType();
 };

@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:39 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/07/17 14:12:55 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/28 14:03:17 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,9 @@ WrongAnimal::WrongAnimal()
 {
 }
 
-WrongAnimal::WrongAnimal(std::string type)
+WrongAnimal::WrongAnimal(const WrongAnimal &type)
 {
+	*this = type;
 }
 
 WrongAnimal::~WrongAnimal()
