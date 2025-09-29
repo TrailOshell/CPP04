@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:44 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 17:52:15 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:44:35 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ class Animal
 		virtual ~Animal();
 
 		Animal &operator=(const Animal &src);
-		
-		virtual void makeSound(void)const;
+	
+		// now a pure virtual function
+		virtual void makeSound(void)const = 0;
+
 		std::string getType()const;
 };
 
