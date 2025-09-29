@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 16:45:47 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:12:52 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,15 @@ int main()
 	meta->makeSound();
 
 	//...
+
+	const WrongAnimal* wrong = new WrongAnimal();
+	const WrongAnimal* weird_cat = new WrongCat();
+
+	std::cout << wrong->getType() << " " << std::endl;
+	std::cout << weird_cat->getType() << " " << std::endl;
+
+	wrong->makeSound();
+	weird_cat->makeSound();
 
 	if (DEBUG_MODE != 0)
 	{

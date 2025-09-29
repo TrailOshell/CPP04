@@ -6,16 +6,16 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:38 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 16:52:50 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:04:28 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongCat.hpp"
 
-WrongCat::WrongCat(): Animal()
+WrongCat::WrongCat(): WrongAnimal()
 { if (DEBUG_MODE != 0) std::cout << GRN "🐈 WrongCat default constructor called" NCL << std::endl; }
 
-WrongCat::WrongCat(const WrongCat &copy)
+WrongCat::WrongCat(const WrongCat &copy): WrongAnimal()
 {
 	if (DEBUG_MODE != 0) std::cout << GRN "🐈 WrongCat copy constructor called" NCL << std::endl;
 	*this = copy;

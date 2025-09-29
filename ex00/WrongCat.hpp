@@ -6,16 +6,16 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:37 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 16:52:26 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 17:11:33 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef WRONGCAT_HPP
 # define WRONGCAT_HPP
 
-# include "Animal.hpp"
+# include "WrongAnimal.hpp"
 
-class WrongCat: public Animal
+class WrongCat: public WrongAnimal
 {
 	public:
 		WrongCat();
