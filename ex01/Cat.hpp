@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:42 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 14:21:46 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:07:31 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include "Animal.hpp"
 # include "Brain.hpp"
-# include <iostream>
 
 class Cat: public Animal
 {

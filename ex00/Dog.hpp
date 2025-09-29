@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:41 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/28 14:07:52 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:37:04 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 # define DOG_HPP
 
 # include "Animal.hpp"
-# include <iostream>
 
 class Dog: public Animal
 {
 	public:
 		Dog();
+		Dog(const Dog &copy);
 		~Dog();
+		
+		Dog &operator=(const Dog &src);
+
 		void makeSound(void)const;
 };
 

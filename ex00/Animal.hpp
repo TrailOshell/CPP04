@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:44 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/28 14:22:34 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:47:25 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,11 @@ class Animal
 		std::string _type;
 	public:
 		Animal();
-		Animal(const Animal &type);
+		Animal(const Animal &copy);
 		~Animal();
+
+		Animal &operator=(const Animal &src);
+		
 		virtual void makeSound(void)const;
 		std::string getType()const;
 };

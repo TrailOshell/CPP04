@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:44 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 15:37:06 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:02:13 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Animal
 		std::string _type;
 	public:
 		Animal();
-		Animal(const Animal &type);
+		Animal(const Animal &copy);
 		virtual ~Animal();
 
 		Animal &operator=(const Animal &src);

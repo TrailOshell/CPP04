@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/07/17 14:16:00 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:45:47 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,29 @@ int main()
 	meta->makeSound();
 
 	//...
+
+	if (DEBUG_MODE != 0)
+	{
+		std::cout << PUR "||| " CYN"Constructor test" PUR" |||" NCL << std::endl;
+		
+		std::cout << PUR "||| " CYN"Animal test" PUR" |||" NCL << std::endl;
+		Animal animal;
+		Animal copy_animal(animal);
+		Animal assign_animal;
+		assign_animal = animal;
+
+		std::cout << PUR "||| " CYN"Cat test" PUR" |||" NCL << std::endl;
+		Cat cat;
+		Cat copy_cat(cat);
+		Cat assign_cat;
+		assign_cat = cat;
+		
+		std::cout << PUR "||| " CYN"Dog test" PUR" |||" NCL << std::endl;
+		Dog dog;
+		Dog copy_dog(dog);
+		Dog assign_dog;
+		assign_dog = dog;
+	}
 
 	return (0);
 }

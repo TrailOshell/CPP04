@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:58:20 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 15:13:00 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:31:08 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ Brain::Brain()
 
 Brain::Brain(const Brain &copy)
 {
-	if (DEBUG_MODE != 0) std::cout << RED "🧠 Brain copy constructor called" NCL << std::endl;
+	if (DEBUG_MODE != 0) std::cout << GRN "🧠 Brain copy constructor called" NCL << std::endl;
 	*this = copy;
 }
 
@@ -26,7 +26,7 @@ Brain::~Brain()
 
 Brain &Brain::operator=(const Brain &src)
 {
-	if (DEBUG_MODE != 0) std::cout << YLW "🧠🧠🧠 Brain overloaded operator= called" NCL << std::endl;
+	if (DEBUG_MODE != 0) std::cout << YLW "🧠 Brain overloaded operator= called" NCL << std::endl;
 	for (int index = 0; index < 100; index++)
 		this->_ideas[index] = src._ideas[index];
 	return (*this);

@@ -6,28 +6,27 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:36 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 15:27:39 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:49:20 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 Animal::Animal()
-{
-}
+{ if (DEBUG_MODE != 0) std::cout << GRN "Animal default constructor called" NCL << std::endl; }
 
-Animal::Animal(const Animal &type)
+Animal::Animal(const Animal &copy)
 {
-	*this = type;
+	if (DEBUG_MODE != 0) std::cout << GRN "Animal copy constructor called" NCL << std::endl;
+	*this = copy;
 }
 
 Animal::~Animal()
-{
-	
-}
+{ if (DEBUG_MODE != 0) std::cout << RED "Animal default destructor called" NCL << std::endl; }
 
 Animal &Animal::operator=(const Animal &src)
 {
+	if (DEBUG_MODE != 0) std::cout << YLW "Animal overloaded operator= called" NCL << std::endl;
 	this->_type = src._type;
 	return (*this);
 }

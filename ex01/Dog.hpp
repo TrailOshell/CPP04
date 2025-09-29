@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:41 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 14:04:28 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 16:07:33 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include "Animal.hpp"
 # include "Brain.hpp"
-# include <iostream>
 
 class Dog: public Animal
 {
