@@ -6,14 +6,17 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:39 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 17:15:15 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:09:33 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal()
-{ if (DEBUG_MODE != 0) std::cout << GRN "WrongAnimal default constructor called" NCL << std::endl; }
+{
+	if (DEBUG_MODE != 0) std::cout << GRN "WrongAnimal default constructor called" NCL << std::endl;
+	this->_type = "WrongAnimal";
+}
 
 WrongAnimal::WrongAnimal(const WrongAnimal&copy)
 {
@@ -38,5 +41,5 @@ std::string WrongAnimal::getType()const
 
 void WrongAnimal::makeSound()const
 {
-	std::cout << PUR "The voice of this beast sounds suspiciously wrong" << std::endl;
+	std::cout << PUR "The voice of this beast sounds suspiciously wrong" NCL << std::endl;
 }

@@ -6,14 +6,17 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:36 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 16:49:41 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:13:07 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 Animal::Animal()
-{ if (DEBUG_MODE != 0) std::cout << GRN "Animal default constructor called" NCL << std::endl; }
+{
+	if (DEBUG_MODE != 0) std::cout << GRN "Animal default constructor called" NCL << std::endl;
+	this->_type = "Animal";
+}
 
 Animal::Animal(const Animal &copy)
 {
@@ -38,5 +41,5 @@ std::string Animal::getType()const
 
 void Animal::makeSound()const
 {
-	std::cout << PUR "The voice of unknown beast cried out" << std::endl;
+	std::cout << PUR "The voice of unknown beast cried out" NCL << std::endl;
 }

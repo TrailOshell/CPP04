@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 17:12:52 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:17:26 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,28 @@ int main()
 	meta->makeSound();
 
 	//...
+	std::cout << std::endl;
 
-	const WrongAnimal* wrong = new WrongAnimal();
+	std::cout << YLW "const WrongAnimal* wronganimal = new WrongAnimal();" NCL << std::endl;
+	const WrongAnimal* wronganimal = new WrongAnimal();
+	std::cout << wronganimal->getType() << ": ";
+	wronganimal->makeSound();
+
+	std::cout << std::endl;
+
+	std::cout << YLW "const WrongCat* wrongcat = new WrongCat();" NCL << std::endl;
+	const WrongCat* wrongcat = new WrongCat();
+	std::cout << wrongcat->getType() << ": ";
+	wrongcat->makeSound();
+	
+	std::cout << std::endl;
+
+	std::cout << YLW "const WrongAnimal* weird_cat = new WrongCat();" NCL << std::endl;
 	const WrongAnimal* weird_cat = new WrongCat();
-
-	std::cout << wrong->getType() << " " << std::endl;
-	std::cout << weird_cat->getType() << " " << std::endl;
-
-	wrong->makeSound();
+	std::cout << weird_cat->getType() << ": ";
 	weird_cat->makeSound();
+
+	std::cout << std::endl;
 
 	if (DEBUG_MODE != 0)
 	{
