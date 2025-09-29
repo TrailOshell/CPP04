@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:58:22 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 14:50:59 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 15:37:10 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,6 @@ class Brain
 		
 };
 
+void	get_n_ideas(Brain *brain, int n);
 
 #endif
