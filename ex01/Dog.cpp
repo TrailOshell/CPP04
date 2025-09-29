@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:41 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 18:58:01 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:24:07 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ Dog &Dog::operator=(const Dog &src)
 
 void Dog::makeSound()const
 {
-	std::cout << YLW "Bork 🥎🐕" << std::endl;
+	std::cout << YLW "Bork 🥎🐕" NCL << std::endl;
 }
 
 Brain* Dog::getBrain(void)const

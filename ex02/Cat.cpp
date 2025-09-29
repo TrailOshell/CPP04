@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:43 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 14:54:23 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:23:45 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Cat &Cat::operator=(const Cat &src)
 
 void Cat::makeSound()const
 {
-	std::cout << YLW "Meow 🧶🐈" << std::endl;
+	std::cout << YLW "Meow 🧶🐈" NCL << std::endl;
 }
 
 Brain* Cat::getBrain(void)const
