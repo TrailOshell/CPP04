@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:43 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 14:54:23 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 19:09:26 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,15 @@ Cat::Cat(const Cat &copy): Animal()
 Cat::~Cat()
 {
 	if (DEBUG_MODE != 0) std::cout << RED "🐈 Cat default destructor called" NCL << std::endl;
-	delete (this->_brain);
+	if (this->_brain)
+		delete (this->_brain);
 }
 
 Cat &Cat::operator=(const Cat &src)
 {
 	if (DEBUG_MODE != 0) std::cout << YLW "🐈 Cat overloaded operator= called" NCL << std::endl;
 	this->_type = src._type;
+	this->_brain = new Brain(*src._brain);
 	return (*this);
 }
 

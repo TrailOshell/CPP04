@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 18:50:08 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 20:21:49 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,43 @@ int main()
 	std::cout << PUR "The cats and dogs left the scene" NCL << std::endl;
 	for (int index = 0; index < 6; index++)
 		delete (a[index]);
+
+	std::cout << std::endl;
+
+	std::cout << GRN "|| Somewhere in a cat laboratory... ||" NCL << std::endl;
+
+	Cat realcat;
+	Brain *realcat_brain = realcat.getBrain();
+
+	realcat_brain->setIdea(0, "I'm the original realcat");
+	realcat_brain->setIdea(1, "Oh god what did they do to my brain?!");
+	realcat_brain->setIdea(2, "What a copycat");
+	
+	Cat copycat = realcat;
+	Brain *copycat_brain = copycat.getBrain();
+
+	std::cout << PUR "system : " << "cat #2 is changing its ideas. Initiating " YLW"copycat_brain->setIdea(...);" PUR"" << NCL << std::endl;
+
+	copycat_brain->setIdea(0, "I may be a copycat but I still got my own brain");
+	copycat_brain->setIdea(1, "see? my brain is still intact");
+	copycat_brain->setIdea(2, "look who's the copycat now?");
+
+	std::cout << YLW "realcat: " << realcat_brain->getIdea(0) << NCL << std::endl;
+	std::cout << CYN "copycat: " << copycat_brain->getIdea(0) << NCL << std::endl;
+	std::cout << std::endl;
+	
+	std::cout << PUR "system : " << "cat #1 brain permit has expired. Initiating " RED"delete (realcat_brain);" PUR"" << NCL << std::endl;
+	delete (realcat_brain);
+	std::cout << YLW "realcat: " << realcat_brain->getIdea(1) << NCL << std::endl;
+	std::cout << CYN "copycat: " << copycat_brain->getIdea(1) << NCL << std::endl;
+	std::cout << std::endl;
+
+	std::cout << PUR "system : " << "Cat #1 is granted temporary access to cat #2 brain. Initiating " YLW"realcat = copycat" PUR"" << NCL << std::endl;
+	// assign brain from copycat to cat so the program won't double free later
+	realcat = copycat;
+	std::cout << YLW "realcat: " << realcat_brain->getIdea(1) << NCL << std::endl;
+	std::cout << CYN "copycat: " << copycat_brain->getIdea(2) << NCL << std::endl;
+	std::cout << std::endl;
 
 	if (DEBUG_MODE != 0)
 	{
