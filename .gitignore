@@ -40,7 +40,8 @@
 # debug information files
 *.dwo
 
-#CPP
-ex00/Animal
 .vscode/settings.json
-ex00/Animal_debug
+
+#CPP
+Animal
+Animal_debug

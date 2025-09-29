@@ -6,7 +6,7 @@
 #    By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/17 13:43:50 by tsomchan          #+#    #+#              #
-#    Updated: 2025/07/17 13:47:16 by tsomchan         ###   ########.fr        #
+#    Updated: 2025/09/29 13:23:34 by tsomchan         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,12 +19,14 @@ INCS			=	Animal.hpp \
 					Dog.hpp \
 					WrongAnimal.hpp \
 					WrongCat.hpp \
+					Brain.hpp 
 
 SRCS			=	Animal.cpp \
 					Cat.cpp \
 					Dog.cpp \
 					WrongAnimal.cpp \
 					WrongCat.cpp \
+					Brain.cpp \
 					main.cpp
 
 OBJS_PTH		=	obj/
