@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:42 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/28 18:04:56 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 13:53:49 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,11 @@ class Cat: public Animal
 		Brain* _brain;
 	public:
 		Cat();
+		Cat(const Cat &copy);
 		~Cat();
+
+		Cat &operator=(const Cat &src);
+
 		void makeSound(void)const;
 };
 
