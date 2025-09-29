@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:41 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 13:53:47 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 14:04:28 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ class Dog: public Animal
 		Dog &operator=(const Dog &src);
 
 		void makeSound(void)const;
+		
+		Brain* getBrain(void)const;
 };
 
 #endif

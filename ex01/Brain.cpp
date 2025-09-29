@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:58:20 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 13:32:18 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 15:13:00 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,20 +32,21 @@ Brain &Brain::operator=(const Brain &src)
 	return (*this);
 }
 
-std::string	Brain::getIdeas(int index)
+std::string	Brain::getIdea(int index)
 {
-	if (DEBUG_MODE != 0) std::cout << YLW "🧠 getIdeas()" NCL << std::endl;
-	if (index < 100)
-		return(this->_ideas[index]);
-	else
-		return (YLW "There is only 100 ideas per brain" NCL);
+	if (DEBUG_MODE != 0) std::cout << YLW "🧠 getIdea(" NCL << index << YLW ") " NCL;
+	if (index >= 100 || index < 0)
+		return (YLW "index too big brain (range must be 0-99)");	
+	return (this->_ideas[index]);
 }
 
 void	Brain::setIdea(int index, std::string idea)
 {
-	if (DEBUG_MODE != 0) std::cout << YLW "🧠 setIdea()" NCL << std::endl;
-	if (index < 100)
-		this->_ideas[index] = idea;
-	else
-		std::cout << YLW "There is only 100 ideas per brain" NCL << std::endl;
+	if (DEBUG_MODE != 0) std::cout << YLW "🧠 setIdea(" NCL << index << ", " <<  idea << YLW ")" NCL << std::endl;
+	if (index >= 100 || index < 0)
+	{
+		std::cout << YLW "Can't big brain more than 100 ideas (range must be 0-99)" NCL << std::endl;
+		return ;
+	}
+	this->_ideas[index] = idea;
 }

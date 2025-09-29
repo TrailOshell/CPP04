@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:43 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 13:58:05 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 14:54:23 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,10 @@ Cat &Cat::operator=(const Cat &src)
 void Cat::makeSound()const
 {
 	std::cout << YLW "Meow 🧶🐈" << std::endl;
+}
+
+Brain* Cat::getBrain(void)const
+{
+	if (DEBUG_MODE != 0) std::cout << YLW "🐈 Cat is braining" NCL << std::endl;
+	return (this->_brain);
 }

@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/28 17:58:22 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 13:23:03 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 14:50:59 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ class Brain
 
 		Brain &operator=(const Brain &src);
 
-		std::string getIdeas(int index);
+		std::string	getIdea(int index);
 		void setIdea(int index, std::string idea);
+		
 };
 
 
