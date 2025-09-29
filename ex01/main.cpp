@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 15:47:53 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 18:50:08 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ int main()
 	//...
 	
 	std::cout << PUR "The cats and dogs roam free" NCL << std::endl;
-	const Animal	*a[10];
-	for (int index = 0; index < 10; index++)
+	const Animal	*a[6];
+	for (int index = 0; index < 6; index++)
 	{
 		if (index % 2)
 			a[index] = new Cat();
@@ -36,15 +36,15 @@ int main()
 	}
 	
 	std::cout << PUR "The cats and dogs annouce themself" NCL << std::endl;
-	for (int index = 0; index < 10; index++)
+	for (int index = 0; index < 6; index++)
 		std::cout << "I'm " << a[index]->getType() << std::endl;
 
 	std::cout << PUR "The cats and dogs bickers" NCL << std::endl;
-	for (int index = 0; index < 10; index++)
+	for (int index = 0; index < 6; index++)
 		a[index]->makeSound();
 	
 	std::cout << PUR "The cats and dogs left the scene" NCL << std::endl;
-	for (int index = 0; index < 10; index++)
+	for (int index = 0; index < 6; index++)
 		delete (a[index]);
 
 	if (DEBUG_MODE != 0)
