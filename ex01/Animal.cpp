@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:36 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/28 14:08:54 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/29 15:27:39 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,13 @@ Animal::Animal(const Animal &type)
 
 Animal::~Animal()
 {
+	
+}
+
+Animal &Animal::operator=(const Animal &src)
+{
+	this->_type = src._type;
+	return (*this);
 }
 
 std::string Animal::getType()const
