@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 18:36:32 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/30 15:09:43 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,25 @@ int main()
 	cat->makeSound();
 	
 	std::cout << std::endl;
+	
+	std::cout << GRN "const " YLW"Dog" GRN"* dog = new " YLW"Dog" GRN"();" NCL << std::endl;
+	const Dog* dog = new Dog();
+	std::cout << dog->getType() << ": ";
+	dog->makeSound();
+	
+	std::cout << std::endl;
 
 	std::cout << GRN "const " BLU"Animal" GRN"* normal_cat = new " YLW"Cat" GRN"();" NCL << std::endl;
 	const Animal* normal_cat = new Cat();
 	std::cout << normal_cat->getType() << ": ";
 	normal_cat->makeSound();
+	
+	std::cout << std::endl;
+
+	std::cout << GRN "const " BLU"Animal" GRN"* normal_dog = new " YLW"Dog" GRN"();" NCL << std::endl;
+	const Animal* normal_dog = new Dog();
+	std::cout << normal_dog->getType() << ": ";
+	normal_dog->makeSound();
 	
 	std::cout << std::endl;
 	std::cout << PUR "------------------------------------------------------------------------------" NCL << std::endl;
