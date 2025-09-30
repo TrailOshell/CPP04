@@ -6,7 +6,7 @@
 /*   By: tsomchan <tsomchan@student.42bangkok.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 13:49:27 by tsomchan          #+#    #+#             */
-/*   Updated: 2025/09/29 17:52:48 by tsomchan         ###   ########.fr       */
+/*   Updated: 2025/09/30 15:05:07 by tsomchan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,15 +52,6 @@ main.cpp:XX:XX: " RED "error:" NCL " ‘animal’ is used uninitialized [" RED "
 main.cpp:XXkXX: " CYN "note:" NCL " ‘animal’ was declared here\n\
    XX |                 Animal *" CYN "animal" NCL ";\n\
       |                         " CYN "^~~~~~" NCL << std::endl;
-	std::cout << PUR "------------------------------------------------------------------------------" NCL << std::endl;
-
-	std::cout << CYN "In Animal.hpp, the consturctor Animal() is protected\n" NCL << std::endl;
-	std::cout << "class Animal\n\
-{\n\
-	protected:\n\
-		std::string _type;\n\
-		Animal();\n\
-	..." << std::endl;
 	std::cout << PUR "------------------------------------------------------------------------------" NCL << std::endl;
 }
 
